@@ -1,6 +1,3 @@
-package com.amazon.ata.metrics.prework.newrequirement;
-
-import com.amazon.ata.metrics.prework.newrequirement.resources.Order;
 
 import com.amazonaws.services.cloudwatch.model.StandardUnit;
 import org.junit.jupiter.api.BeforeEach;

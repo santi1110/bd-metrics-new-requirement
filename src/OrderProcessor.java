@@ -1,9 +1,3 @@
-package com.amazon.ata.metrics.prework.newrequirement;
-
-import com.amazon.ata.metrics.prework.newrequirement.resources.CreditProcessor;
-import com.amazon.ata.metrics.prework.newrequirement.resources.CustomerManager;
-import com.amazon.ata.metrics.prework.newrequirement.resources.InventoryManager;
-import com.amazon.ata.metrics.prework.newrequirement.resources.Order;
 
 /**
  * Class representing final state of the coding activity.

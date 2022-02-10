@@ -1,5 +1,3 @@
-package com.amazon.ata.metrics.prework.newrequirement;
-
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.cloudwatch.AmazonCloudWatch;
 import com.amazonaws.services.cloudwatch.AmazonCloudWatchClientBuilder;

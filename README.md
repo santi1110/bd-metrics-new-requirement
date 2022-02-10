@@ -1,10 +1,5 @@
 ### New Metric Requirement
 
-**Branch name:** metrics-prework
-
-**RDE workfow:**
-* `rde wflow run metrics-prework-newrequirement-orderprocessortest`
-
 Expected time required: 15 min
 
 Your `OrderProcessor` class is running smoothly in production.  However, operations would like to keep track
