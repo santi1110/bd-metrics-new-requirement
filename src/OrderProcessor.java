@@ -1,3 +1,4 @@
+import com.amazonaws.services.cloudwatch.model.StandardUnit;
 
 /**
  * Class representing final state of the coding activity.
@@ -28,6 +29,8 @@ public class OrderProcessor {
     public boolean processOrder(Order newOrder) {
         boolean success = false;
 
+        long startTime = System.currentTimeMillis();
+
         try {
             customerManager.verifyCustomerInfo(newOrder);
             int pickListNumber = inventoryManager.createPickList(newOrder);
@@ -37,6 +40,11 @@ public class OrderProcessor {
         } catch (Exception e) {
             System.out.println("Error processing order " + newOrder.getOrderNumber());
         }
+
+        long endTime = System.currentTimeMillis();
+        long elapsedTime = endTime - startTime;
+
+        metricsPublisher.addMetric("ORDER_PROCESSING_TIMES", elapsedTime, StandardUnit.Milliseconds);
 
         return success;
     }
